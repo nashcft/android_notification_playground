@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">notification_playground</string>
+    <string name="button_name_normal">normal</string>
+    <string name="button_name_silent">silent</string>
+</resources>

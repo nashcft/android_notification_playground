@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/head_min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Channel importance: MIN"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_min_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_normal"
+        app:layout_constraintEnd_toStartOf="@+id/button_min_silent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_min" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_min_silent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_silent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_min_normal"
+        app:layout_constraintTop_toBottomOf="@id/head_min" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/head_low"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Channel importance: LOW"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintTop_toBottomOf="@id/button_min_normal"
+        app:layout_constraintStart_toStartOf="@id/head_min"
+        app:layout_constraintEnd_toEndOf="@id/head_min"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_low_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_normal"
+        app:layout_constraintEnd_toStartOf="@+id/button_low_silent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_low" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_low_silent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_silent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_low_normal"
+        app:layout_constraintTop_toBottomOf="@id/head_low" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/head_default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Channel importance: DEFAULT"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintTop_toBottomOf="@id/button_low_normal"
+        app:layout_constraintStart_toStartOf="@id/head_min"
+        app:layout_constraintEnd_toEndOf="@id/head_min"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_default_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_normal"
+        app:layout_constraintEnd_toStartOf="@+id/button_default_silent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_default" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_default_silent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_silent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_default_normal"
+        app:layout_constraintTop_toBottomOf="@id/head_default" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/head_high"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Channel importance: HIGH"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintTop_toBottomOf="@id/button_default_normal"
+        app:layout_constraintStart_toStartOf="@id/head_min"
+        app:layout_constraintEnd_toEndOf="@id/head_min"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_high_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_normal"
+        app:layout_constraintEnd_toStartOf="@+id/button_high_silent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_high" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_high_silent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_name_silent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_high_normal"
+        app:layout_constraintTop_toBottomOf="@id/head_high" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
